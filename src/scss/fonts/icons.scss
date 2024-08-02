@@ -1,0 +1,31 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&::before {
+		@extend %ic;
+	}
+}
+
+._icon-cart:before {
+	content: "\e93a";
+}
+._icon-phone:before {
+	content: "\e942";
+}
+._icon-star-empty:before {
+	content: "\e9d7";
+}
+._icon-star-full:before {
+	content: "\e9d9";
+}
+._icon-arrow-right:before {
+	content: "\ea3c";
+}
